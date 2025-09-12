@@ -1,0 +1,307 @@
+/* 全局样式 */
+section {
+  scroll-margin-top: 160px; /* header 高度 + margin */
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+  color: #0059b3;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  background: #0059b3;
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.8em;
+}
+nav {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 1.2em;
+}
+nav a {
+  margin-right: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  color: #004080;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+}
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* 一行一个卡片 */
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr; /* 每行一个 */
+  gap: 20px; /* 卡片间距 */
+}
+
+/* 一行五列 */
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* 卡片保持居中对齐 */
+.grid-5 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片容器，确保上下左右居中 */
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* 可以根据需要调整 */
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* 保持图片比例 */
+}
+
+.card {
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-date {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* 新闻/论文紧凑卡片 */
+.newscard {
+  background: #fff;
+  padding: 10px 15px; /* 缩小 padding */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
+  font-size: 0.95em; /* 稍微小一些字体 */
+}
+.newscard h3 {
+  font-size: 1em; /* 标题更紧凑 */
+  margin-bottom: 5px;
+}
+.newscard p {
+  margin: 0; /* 去掉多余间距 */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #e55a00;
+}
+.members img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+footer {
+  background: #0059b3;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* 实验室简介左右布局 */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+.about-image img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 轮播样式 */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* 控制按钮 */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 分页指示器 */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background: #fff;
+}
+
+.members .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px; /* 上下20px，左右15px */
+  background: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* .members .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+} */
+
+.members .card img {
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 0px solid #0059b3; /* 可选蓝色边框 */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.members .card img:hover {
+  transform: scale(1.05); /* 悬停头像略微放大 */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* 阴影加深 */
+}
+
+.members .card h3 {
+  font-size: 1.1em;
+  margin: 5px 0 5px 0;
+  color: #004080;
+}
+
+.members .card p {
+  font-size: 0.95em;
+  margin: 0;
+  color: #333;
+}

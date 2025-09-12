@@ -1,372 +1,477 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POVA</title>
+    <link href="theme.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <!-- Logo 和标题 -->
+        <div style="display: flex; align-items: center">
+          <!-- <img
+            src="resource_img/logo.png"
+            alt="实验室 Logo"
+            style="height: 50px; width: 80px; margin-right: 10px"
+          /> -->
+          <div
+            style="
+              width: 95px;
+              height: 95px;
+              background: #fff;
+              border-radius: 40%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 40px;
+            "
+          >
+            <img
+              src="resource_img/logo.png"
+              alt="实验室 Logo"
+              style="width: 85px"
+            />
+          </div>
 
-<head>
-    <meta charset="utf-8">
-    <!-- <meta name="referrer" content="never"> -->
-    <title>首页</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="research lab" content="UBMDFL">
-    <meta name="author" content="credit: https://github.com/photonlines/Research-Lab-Website">
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap1.min.css" rel="stylesheet">
-    <!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet"> -->
-    <link href="css/theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-<div class="container">
-    <header class="jumbotron" id="overview">
-        <table style="width:100%;border:0px;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="vertical-align:middle;width:auto;">
-                <img src="resource_img/ouc.jpg" width="250" />   
-            </td>
-            <td style="vertical-align:middle;width:auto;">
-                <img src="resource_img/logo.png" width="80" />   
-            </td>
-            <td style="vertical-align:middle;width:auto;text-align: center;">
-                <p class="lead">
-                    <h4>人工智能研究院 水下视觉实验室</h3>
-                    <h3 style="color:#069">浮游植物观测与视觉分析课题组</h2>
-                    Phytoplankton Observation and Visual Analysis (POVA) Group @ OUC
-                </p>
-            </td>
-          </tr>
-        </tbody></table>
+          <h1 style="margin: 0; font-size: 1.8em">
+            <span style="display: block">中国海洋大学</span>
+            <span style="display: block">浮游植物观测与视觉分析课题组</span>
+            <span style="display: block; font-size: small"
+              >Phytoplankton Observation and Visual Analysis (POVA)</span
+            >
+          </h1>
+        </div>
+        <!-- 导航 -->
+        <nav>
+          <a href="#about">简介</a>
+          <a href="#news">新闻</a>
+          <a href="#publications">论文</a>
+          <a href="#projects">项目</a>
+          <a href="#members">成员</a>
+          <a href="#alumni">校友</a>
+          <a href="#collaborators">合作单位</a>
+        </nav>
+      </div>
     </header>
-    
-    <div class="masthead">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li><a href="#intro">简介</a></li>
-                        <li><a href="#news">新闻资讯</a></li>
-                        <li><a href="#projects">科研项目</a></li>
-                        <li><a href="#publications">学术论文</a></li>
-                        <li><a href="#download">资源下载</a></li>
-                        <li><a href="#people">成员</a></li> 
-                        <li><a href="#collaborate">合作交流</a></li>                   
-                        <li><a href="#alumni">Alumni</a></li>  
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <a name="intro"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-rss-square"></i> 简介</h4>        
-        <div class="col-md-6">
-            <div id="main-carousel" class="carousel slide box_decf">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="rolling_img/OIP-C.jpg" class="carousel-image" alt="">
-                        <div class="carousel-caption">
-                            <h4>欢迎来到浮游植物观测与视觉分析课题组</h4>
-                            <!-- -->
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="rolling_img/demo.png" class="carousel-image" alt="">
-                        <div class="carousel-caption">
-                            <h4>浮游植物观测示例</h4>
-                            <p></p>
-                        </div> 
-                    </div>
-                    
-                </div>
-                <a class="left carousel-control" href="#main-carousel" data-slide="prev">‹</a>
-                <a class="right carousel-control" href="#main-carousel" data-slide="next">›</a>
-            </div>
-        </div>
-
-        <div class="col-md-6" style="float:right;">
-            
-            <p style="text-align:justify">
-                浮游植物观测与视觉分析课题组隶属于中国海洋大学<a href="http://ai-ouc.cn/index.html"><b>人工智能研究院水下视觉实验室</b></a>，             
-                负责人为<a href="http://ai-ouc.cn/faculty/dongjy.html"><b>董军宇</b></a>教授。
-                该课题组研究方向聚焦于水下浮游动植物的观测和分析，以及计算机视觉、机器学习和大模型等相关技术的研究与应用。
+    <div class="container">
+      <!-- 实验室简介 -->
+      <section id="about">
+        <h2>简介</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p>
+              <b>浮游植物观测与视觉分析课题组 (POVA Group)</b>
+              隶属于中国海洋大学
+              <a href="http://ai-ouc.cn/index.html"
+                ><b>人工智能研究院水下视觉研究团队</b></a
+              >。团队负责人为
+              <a href="http://ai-ouc.cn/faculty/dongjy.html"><b>董军宇</b></a>
+              教授，国家高层次人才，现任中国海洋大学信息科学与工程学部部长、博士生导师，长期从事海洋大数据、水下视觉信息处理等方向的科研与教学工作。
+              课题组指导老师为
+              <a href="https://yuezunli.github.io/"><b>李岳尊</b></a>
+              博士，硕士生导师，入选2024年全球前2%顶尖科学家榜单。
             </p>
-            <!-- <p style="text-align: center;"><img src="resource_img/logo_pvoa.png" width="100">  </p> -->
-                     
-        </div>
-    </div>
-    
-    <a name="news"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-bolt"></i> 新闻资讯</h4>
-        <ul class="mylist">
-            <li><b>[2024.07]</b>: <b>祝贺于阳关于多目标追踪的工作被一区期刊 TCSVT接收. &nbsp; <span style="color:red">New!</span></b></li>
-            <li><b>[2024.07]</b>: <b>祝贺吕清轩关于域适应人脸鉴伪的工作被CCF A类期刊IEEE TIFS接收. &nbsp; <span style="color:red">New!</span></b></li>
-            <li><b>[2024.05]: 浮游植物观测与视觉分析课题网站上线.  
-                &nbsp; <span style="color:red">New!</span> &nbsp; </b></li>
-            <li><b>[2024.04]</b>: <b>祝贺于佳傲关于图像文本检测的工作被CCF B类会议ACM ICMR接收. &nbsp; <span style="color:red">New!</span></b></li>
-            <li><b>[2024.02]</b>: <b>祝贺于佳傲关于图像文本检测的工作被Knowledge-based System期刊接收. （SCI一区） &nbsp; <span style="color:red">New!</span></b></li>
-            <li><b>[2023.05]</b>: 祝贺于佳傲关于浮游植物观测数据集的工作被海洋科学方向期刊Journal of Marine Science and Engineering (JMSE)接收. （SCI二区）</li>
-            <li><b>[2023.04]</b>: 祝贺吕清轩关于域适应的工作被CCF B期刊IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)接收.（SCI一区）</li>
-        </ul>
-    </div>
-    <br>
+            <p>
+              课题组依托国家自然科学基金重点支持项目：
+              <i
+                >山东近海浮游植物及相关海洋环境要素原位观测与分析系统研究（U1706218）</i
+              >
+              和海南省三亚市科技创新专项项目：
+              <i>基于智能取样的近海有害藻华原位监测（2022KJCX92）</i>，
+              以及中国海洋大学三亚海洋研究院重点研发平台，聚焦水下浮游动植物的观测与分析，以及计算机视觉、机器学习和大模型等相关技术的研究与应用。
+              截至目前，团队已发表相关论文 40 余篇，授权发明专利 3
+              项，软件著作权 2 项。
+            </p>
+          </div>
+          <!-- <div class="about-image">
+            <img src="resource_img/planktonpipe.png" alt="实验室展示" />
+          </div> -->
 
-    <a name="projects"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-podcast"></i> 科研项目</h4>
-        <div style="float:left;">
-            <div class="box_decf">
-                <img src="resource_img/planktonpipe.png" height="300" width="300">
+          <!-- 图片轮播部分 -->
+          <div class="about-image">
+            <div class="slider">
+              <div class="slides">
+                <div class="slide">
+                  <img src="resource_img/planktonpipe.png" alt="图片1" />
+                  <div class="caption">海洋浮游植物实时原位监测仪</div>
+                </div>
+                <div class="slide">
+                  <img src="resource_img/demo1.gif" alt="图片2" />
+                  <div class="caption">智能分析示例</div>
+                </div>
+                <div class="slide">
+                  <img src="resource_img/planktonsystem.png" alt="图片3" />
+                  <div class="caption"></div>
+                </div>
+                <div class="slide">
+                  <img src="resource_img/demo2.png" alt="图片4" />
+                  <div class="caption"></div>
+                </div>
+              </div>
+              <!-- 左右控制按钮 -->
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+              <!-- 分页指示器 -->
+              <div class="dots">
+                <span class="dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-md-7" style="float:right;">
-            <p style="text-align:center"><b>海洋浮游植物实时原位监测仪</b></p>
-            <p>有害藻华和赤潮是近海常见的灾害性生态异常现象，已成为一类全球性的海洋环境灾害，有害藻华爆发已严重威胁到海水养殖、海域生态安全和人类健康。但现有监测技术不足以根据藻华的不同生长阶段进行及时采样，无法为微生物群落演替与浮游植物互作过程提供实时监测。</p> 
+      </section>
 
-            <p>本项目拟研发基于光学显微技术的原位观测软硬件系统，完成针对海洋浮游植物的高性能、低功耗原位监测和实时处理任务，并利用北斗卫星短报文模块实时返回原位观测和实时识别系统的结果，研究特定海域浮游植物繁殖与海洋环境要素变化规律之
-            间的关系。</p>         
+      <!-- 新闻 -->
+      <section id="news">
+        <h2>新闻</h2>
+        <div class="grid grid-3">
+          <div class="newscard">
+            <div class="card-date">[2024.07]</div>
+            <h3>于阳多目标追踪工作被一区期刊 TCSVT 接收</h3>
+            <span style="color: red">New!</span></p>
+          </div>
+          <div class="newscard">
+            <div class="card-date">[2024.07]</div>
+            <h3>
+              吕清轩域适应人脸鉴伪工作被CCF A类期刊 IEEE TIFS 接收
+            </h3>
+            
+          </div>
+          <div class="newscard">
+            <div class="card-date">[2024.05]</div>
+            <h3>浮游植物观测与视觉分析课题网站上线</h3>
+            
+          </div>
+          <div class="newscard">
+            <div class="card-date">[2024.04]</div>
+            <h3>于佳傲图像文本检测工作被CCF B类会议 ACM ICMR 接收</h3>
+            
+          </div>
+          <div class="newscard">
+            <div class="card-date">[2024.02]</div>
+            <h3>
+              于佳傲图像文本检测工作被 Knowledge-based System
+              期刊接收（SCI一区）
+            </h3>
+            
+          </div>
         </div>
+      </section>
+
+      
+
+      <!-- 学术论文 -->
+      <section id="publications">
+      <h2>近期论文</h2>
+      <div class="grid grid-1">
+        <div class="card">
+          <h3><a href="#">PhyTracker: An Online Tracker for Phytoplankton.</a></h3>
+          <p>Yang Yu, Qingxuan Lv, Yuezun Li<sup>#</sup>, Zhiqiang Wei, Junyu Dong<sup>#</sup></p>
+          <p>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation.</a></h3>
+          <p>Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang</p>
+          <p>IEEE Transactions on Information Forensics and Security (TIFS), 2024</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Dynamic Soft Labeling for Visual Semantic Embedding.</a></h3>
+          <p>Jiaao Yu, Yunlai Ding, Junyu Dong<sup>#</sup>, Yuezun Li</p>
+          <p>ACM International Conference on Multimedia Retrieval (ICMR), 2024</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Multiview Adaptive Attention Pooling for Image-Text Retrieval.</a></h3>
+          <p>Yunlai Ding, Jiaao Yu, Qingxuan Lv, Haoran Zhao, Junyu Dong<sup>#</sup>, Yuezun Li</p>
+          <p>Knowledge-Based Systems (KBS), 2024</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">PMOT2023: A large-scale multi-object tracking (MOT) dataset with application to phytoplankton observation.</a></h3>
+          <p>Jiaao Yu, Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Haoran Zhao, Qiong Li</p>
+          <p>Journal of Marine Science and Engineering (JMSE), 2023</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">LaFea: Learning Latent Representation beyond Feature for Universal Domain Adaptation.</a></h3>
+          <p>Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Ziqian Guo</p>
+          <p>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Network Embedding via Deep Prediction Model</a></h3>
+          <p>X. Sun, Z. Song, Y. Yu, J. Dong, C. Plant, C. Böhm</p>
+          <p>IEEE Transactions on Big Data, 2023</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Pair-Wise Similarity Knowledge Distillation for RSI Scene Classification.</a></h3>
+          <p>Zhao, H.; Sun, X.; Gao, F.; Dong, J</p>
+          <p>Remote Sens., 2022</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Underwater Enhancement Model via Reverse Dark Channel Prior.</a></h3>
+          <p>Shen, Y., Zhao, H., Sun, X., Zhang, Y., Dong, J</p>
+          <p>Pattern Recognition and Computer Vision (PRCV), 2020</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Developing a microscopic image dataset in support of intelligent phytoplankton detection using deep learning.</a></h3>
+          <p>Qiong Li, Xin Sun, Junyu Dong, Shuqun Song, Tongtong Zhang, Dan Liu, Han Zhang, Shuai Han</p>
+          <p>ICES Journal of Marine Science, 2020</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects">
+      <h2>项目</h2>
+      <div class="grid grid-3">
+        <div class="newscard">
+          <div class="card-date">[2022-2024]</div>
+          <h3>海南省三亚市科技创新专项项目：
+            <i>基于智能取样的近海有害藻华原位监测（2022KJCX92）</i></h3>
+        </div>
+        <div class="newscard">
+          <div class="card-date">[2018-2021]</div>
+          <h3>
+            国家自然科学基金重点支持项目：
+            <i
+              >山东近海浮游植物及相关海洋环境要素原位观测与分析系统研究（U1706218）</i
+            >
+          </h3>
+          
+        </div>
+      </div>
+    </section>
+
+      <section id="members">
+      <h2>成员</h2>
+      <div class="grid grid-3 members">
+        <!-- 教师 -->
+        <div class="card">
+          <img src="people_img/dongjy.jpg" alt="董军宇" />
+          <h3><a href="http://it.ouc.edu.cn/djy/main.htm">董军宇</a></h3>
+          <p>教授</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/yz.jpg" alt="李岳尊" />
+          <h3><a href="https://yuezunli.github.io/">李岳尊</a></h3>
+          <p>讲师</p>
+        </div>
+
+        <!-- 学生 -->
+        <div class="card">
+          <img src="people_img/jiangjinkun.jpg" alt="姜锦琨" />
+          <h3>姜锦琨</h3>
+          <p>博士（2025）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/yuyang.jpg" alt="于阳" />
+          <h3>于阳</h3>
+          <p>博士（2025）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/zhengsimin.jpg" alt="郑斯敏" />
+          <h3>郑斯敏</h3>
+          <p>硕士（2023）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/zhusy.jpg" alt="朱绍源" />
+          <h3>朱绍源</h3>
+          <p>硕士（2023）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/yanhc.png" alt="燕泓丞" />
+          <h3>燕泓丞</h3>
+          <p>硕士（2023）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/wujj.jpg" alt="伍姣姣" />
+          <h3>伍姣姣</h3>
+          <p>硕士（2024）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/yanmr.jpg" alt="严美如" />
+          <h3>严美如</h3>
+          <p>硕士（2024）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/wangzy.jpg" alt="汪哲宇" />
+          <h3>汪哲宇</h3>
+          <p>硕士（2024）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/" alt="伍姣姣" />
+          <h3>钟意伟</h3>
+          <p>硕士（2025）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/" alt="严美如" />
+          <h3>王蕾</h3>
+          <p>硕士（2025）</p>
+        </div>
+
+        <div class="card">
+          <img src="people_img/" alt="汪哲宇" />
+          <h3>秦佳龙</h3>
+          <p>硕士（2025）</p>
+        </div>
+      </div>
+    </section>
+
+      <section id="alumni">
+        <h2>校友</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>吕清轩（2021）</h3>
+            <p>青岛科技大学</p>
+          </div>
+          <div class="card">
+            <h3>李国宇（2022）</h3>
+            <p>青岛港湾职业技术学院</p>
+          </div>
+          <div class="card">
+            <h3>于佳傲（2021）</h3>
+            <p>华东师范大学，读博</p>
+          </div>
+          <div class="card">
+            <h3>郭梓骞（2021）</h3>
+            <p>中海油</p>
+          </div>
+          <div class="card">
+            <h3>庞静溪（2021）</h3>
+            <p>辽宁定向选调</p>
+          </div>
+          <div class="card">
+            <h3>魏伟（2021）</h3>
+            <p>光大银行</p>
+          </div>
+          <div class="card">
+            <h3>徐瑞华（2021）</h3>
+            <p>浪潮</p>
+          </div>
+          <div class="card">
+            <h3>谢斯航（2021）</h3>
+            <p>广州腾讯科技有限公司</p>
+          </div>
+          <div class="card">
+            <h3>赵浩然（2019）</h3>
+            <p>青岛理工大学，副教授</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 合作单位 -->
+      <section id="collaborators">
+        <h2>合作单位</h2>
+        <div class="grid grid-5">
+          <div class="card">
+            <div class="img-container">
+              <img src="resource_img/CAS.jpg" alt="单位1" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="resource_img/leicester.png" alt="单位2" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="resource_img/watt.jpg" alt="单位3" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img src="resource_img/dizhi.webp" alt="单位4" />
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
     </div>
 
-    
-    <a name="publications"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-graduation-cap"></i> 学术论文</h4>
-        <ul class="mylist">
-             <li>
-                <a>PhyTracker: An Online Tracker for Phytoplankton.</a>
-                Yang Yu, Qingxuan Lv, Yuezun Li<sup>#</sup>, Zhiqiang Wei, Junyu Dong<sup>#</sup>.
-                IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.
-                <br>
-            </li>
+    <footer>
+      <p>
+        © 2025 浮游植物观测与视觉分析课题组（POVA） | Email: liyuezun AT ouc DOT edu DOT cn | 地址: 中国海洋大学西海岸校区 信息南楼
+      </p>
+    </footer>
+  </body>
 
-            <li>
-                <a>DomainForensics: Exposing Face Forgery across Domains via Bi-directional Adaptation.</a>
-                Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Sheng Chen, Hui Yu, Huiyu Zhou, Shu Zhang.
-                IEEE Transactions on Information Forensics and Security (TIFS), 2024. 
-                <br>
-            </li>
+  <script>
+    // 初始化
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const totalSlides = slides.length;
+    const slidesContainer = document.querySelector(".slides");
+    const dots = document.querySelectorAll(".dot");
 
-            <li>
-                <a>Dynamic Soft Labeling for Visual Semantic Embedding.</a>
-                Jiaao Yu, Yunlai Ding, Junyu Dong<sup>#</sup>, Yuezun Li.
-                ACM International Conference on Multimedia Retrieval (ICMR), 2024. 
-                <br>
-            </li>
-            <li>
-                <a>Multiview Adaptive Attention Pooling for Image-Text Retrieval.</a>
-                Yunlai Ding, Jiaao Yu, Qingxuan Lv, Haoran Zhao, Junyu Dong<sup>#</sup>, Yuezun Li.
-                Knowledge-Based Systems (KBS), 2024. 
-            </li>
-            <li>
-                <a>PMOT2023: A large-scale multi-object tracking (MOT) dataset with application to phytoplankton observation.</a> 
-                Jiaao Yu, Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Haoran Zhao, Qiong Li.
-                Journal of Marine Science and Engineering (JMSE), 2023.
-            </li>
-            <li>                	
-                <a>LaFea: Learning Latent Representation beyond Feature for Universal Domain Adaptation.</a>
-                Qingxuan Lv, Yuezun Li<sup>#</sup>, Junyu Dong<sup>#</sup>, Ziqian Guo.
-                IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.
-            </li>
-            <li> 
-                <a>Network Embedding via Deep Prediction Model</a>. X. Sun, Z. Song, Y. Yu, J. Dong, C. Plant, C. Böhm. IEEE Transactions on Big Data, 2023.
-            </li>
-            <li>
-                <a>Pair-Wise Similarity Knowledge Distillation for RSI Scene Classification.</a> Zhao, H.; Sun, X.; Gao, F.; Dong, J. Remote Sens. 2022.
-            </li>
-            <li>
-                <a>Underwater Enhancement Model via Reverse Dark Channel Prior.</a> Shen, Y., Zhao, H., Sun, X., Zhang, Y., Dong, J.  Pattern Recognition and Computer Vision. PRCV 2020
-            </li>
-            <li>
-                <a>Developing a microscopic image dataset in support of intelligent phytoplankton detection using deep learning.</a>
-                Qiong Li, Xin Sun, Junyu Dong, Shuqun Song, Tongtong Zhang, Dan Liu, Han Zhang, Shuai Han. ICES Journal of Marine Science, 2020.
-            </li>
-        </ul>
-    </div>
+    function showSlide(index) {
+      currentIndex = index;
+      slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot) => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
 
-    <a name="download"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-download"></i> 资源下载</h4>
-        <ul class="mylist">
-            <li>
-                <a href="https://github.com/joanconquerlee/PMID2019">Phytoplankton Microscopic Image Dataset 2019.</a> 
-            </li>
-        </ul>
-    </div>
-    
-    <a name="people"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-users"></i> 成员</h4>
-        <section id="Faculty">   
-            <div class="row-fluid marketing">    
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/dongjy.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="http://it.ouc.edu.cn/djy/main.htm">董军宇</a></h5>
-                        <p>教授</p>
-                    </div>
-                </div>
+    // 自动轮播
+    let slideInterval = setInterval(() => {
+      showSlide((currentIndex + 1) % totalSlides);
+    }, 3000);
 
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/yz.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="https://yuezunli.github.io/">李岳尊</a></h5>
-                        <p>讲师</p>
-                    </div>
-                </div>               
-            </br>
-        </section> 
-        <br>
-        <section id="students">  
-            <div class="row-fluid marketing">    
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/qingxuan.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">吕清轩</a></h5>
-                        <p>博士</p>
-                    </div>
-                </div>
+    // 左右按钮控制
+    document.querySelector(".prev").addEventListener("click", () => {
+      showSlide((currentIndex - 1 + totalSlides) % totalSlides);
+      resetInterval();
+    });
+    document.querySelector(".next").addEventListener("click", () => {
+      showSlide((currentIndex + 1) % totalSlides);
+      resetInterval();
+    });
 
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/jiangjinkun.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">姜锦琨</a></h5>
-                        <p>硕士（2022）</p>
-                    </div>
-                </div>    
-                
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/yuyang.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">于阳</a></h5>
-                        <p>硕士（2022）</p>
-                    </div>
-                </div>  
-                
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/liguoyu.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">李国宇</a></h5>
-                        <p>硕士（2022）</p>
-                    </div>
-                </div>  
+    // 点击分页点
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const index = parseInt(dot.getAttribute("data-index"));
+        showSlide(index);
+        resetInterval();
+      });
+    });
 
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/zhengsimin.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">郑斯敏</a></h5>
-                        <p>硕士（2023）</p>
-                    </div>
-                </div>  
-                
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/zhusy.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">朱绍源</a></h5>
-                        <p>硕士（2023）</p>
-                    </div>
-                </div> 
+    // 点击按钮或分页后重置自动轮播
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(() => {
+        showSlide((currentIndex + 1) % totalSlides);
+      }, 3000);
+    }
 
-                <div class="span2 people-item" style="margin-left: 0;">
-                    <div class="centered">
-                        <img src="people_img/yanhc.png"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">燕泓丞</a></h5>
-                        <p>硕士（2023）</p>
-                    </div>
-                </div> 
-                
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/wujj.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">伍姣姣</a></h5>
-                        <p>硕士（2024）</p>
-                    </div>
-                </div>
-
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/yanmr.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">严美如</a></h5>
-                        <p>硕士（2024）</p>
-                    </div>
-                </div>
-
-                <div class="span2 people-item">
-                    <div class="centered">
-                        <img src="people_img/wangzy.jpg"/>
-                    </div>
-                    <div class="centered">
-                        <h5><a href="">汪哲宇</a></h5>
-                        <p>硕士（2024）</p>
-                    </div>
-                </div>
-
-            </br>
-        </section> 
-    </div>
-
-    <a name="alumni"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-user-circle-o"></i> Alumni</h4>
-        <ul class="mylist">
-            <li>于佳傲（2021）: 华东师范大学，读博</li>
-            <li>郭梓骞（2021）: 中海油</li>
-            <li>庞静溪（2021）: 辽宁定向选调</li>
-            <li>魏伟（2021）: 光大银行</li>
-            <li>徐瑞华（2021）: 浪潮</li>
-            <li>谢斯航（2021）：广州腾讯科技有限公司</li>
-            <li>赵浩然（2019）: 青岛理工大学，副教授</li>
-    </div>
-
-    <a name="collaborate"></a>
-    <div class="row-fluid">
-        <h4 class="subhead"><i class="fa fa-university"></i> 合作交流</h4>
-        <table><tr>
-            <td><img src="resource_img/watt.jpg" width="150"></td>
-            <td><img src="resource_img/leicester.png" width="150"></td>
-            <td><img src="resource_img/CAS.jpg" width="100"></td>
-            <td><img src="resource_img/whu.jpg" width="100"></td>
-        </tr></table>
-    </div>
-
-    <br><hr>
-    <!-- <div style="text-align: center;">
-        <a href='https://clustrmaps.com/site/1bzkg'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=couvp160JZPtqtXJSnEuID5EYv-20A5piVo4h3s5lwk'/></a>
-    </div> -->
-    
-</div>
-
-
-<!-- Javascript files -->
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script> $('#main-carousel').carousel(); </script>
-
-</body>
-
+    // 初始化显示
+    showSlide(0);
+  </script>
 </html>
