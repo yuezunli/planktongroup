@@ -284,9 +284,6 @@ footer a {
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
-  border: 0px solid #0059b3; /* 可选蓝色边框 */
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* 阴影效果 */
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .members .card img:hover {
