@@ -133,6 +133,22 @@ h2 {
   margin: 0; /* 去掉多余间距 */
 }
 
+/* 新闻/论文紧凑卡片 */
+.papercard {
+  background: #fff;
+  padding: 5px 15px; /* 缩小 padding */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
+  font-size: 0.95em; /* 稍微小一些字体 */
+}
+.papercard h3 {
+  font-size: 1em; /* 标题更紧凑 */
+  margin-bottom: 5px;
+}
+.papercard p {
+  margin: 0; /* 去掉多余间距 */
+}
+
 .btn {
   display: inline-block;
   padding: 12px 25px;
