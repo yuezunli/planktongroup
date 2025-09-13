@@ -1,3 +1,7 @@
+html {
+  font-size: 16px; /* 或者 62.5% (等于10px，方便换算rem) */
+}
+
 /* 全局样式 */
 section {
   scroll-margin-top: 160px; /* header 高度 + margin */
@@ -273,16 +277,10 @@ footer a {
 }
 
 .alumni .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 15px; /* 上下20px，左右15px */
   background: #fff;
-  border-radius: 12px;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 5px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* .alumni .card img {
@@ -294,12 +292,45 @@ footer a {
 } */
 
 .alumni .card h3 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 5px 0 5px 0;
   color: #004080;
 }
 
 .alumni .card p {
+  font-size: 0.95em;
+  margin: 0;
+  color: #333;
+}
+
+.col .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px; /* 上下20px，左右15px */
+  background: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+  /* text-align: center; */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* .col .card img {
+  border-radius: 5%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+} */
+
+.col .card h3 {
+  font-size: 1em;
+  margin: 5px 0 5px 0;
+  color: #004080;
+}
+
+.col .card p {
   font-size: 0.95em;
   margin: 0;
   color: #333;
