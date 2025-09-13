@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   text-align: justify;
+  font-size: 1em;
 }
 a {
   text-decoration: none;
@@ -30,12 +31,12 @@ header {
 header h1 {
   margin: 0;
   display: inline-block;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 nav {
   display: inline-block;
   margin-left: 40px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 nav a {
   margin-right: 20px;
@@ -75,24 +76,6 @@ h2 {
   gap: 20px; /* 卡片间距 */
 }
 
-/* 一行五列 */
-.grid-5 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-/* 卡片保持居中对齐 */
-.grid-5 .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .card {
   background: #fff;
   padding: 5px 20px;
@@ -108,38 +91,6 @@ h2 {
   font-size: 0.85em;
   color: #888;
   margin-bottom: 5px;
-}
-
-/* 新闻/论文紧凑卡片 */
-.newscard {
-  background: #fff;
-  padding: 10px 15px; /* 缩小 padding */
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
-  font-size: 0.95em; /* 稍微小一些字体 */
-}
-.newscard h3 {
-  font-size: 1em; /* 标题更紧凑 */
-  margin-bottom: 5px;
-}
-.newscard p {
-  margin: 0; /* 去掉多余间距 */
-}
-
-/* 新闻/论文紧凑卡片 */
-.papercard {
-  background: #fff;
-  padding: 5px 15px; /* 缩小 padding */
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
-  font-size: 0.95em; /* 稍微小一些字体 */
-}
-.papercard h3 {
-  font-size: 1em; /* 标题更紧凑 */
-  margin-bottom: 5px;
-}
-.papercard p {
-  margin: 0; /* 去掉多余间距 */
 }
 
 footer {
@@ -250,6 +201,37 @@ footer a {
 }
 .dot.active {
   background: #fff;
+}
+/* 新闻/论文紧凑卡片 */
+.news .card {
+  background: #fff;
+  padding: 10px 15px; /* 缩小 padding */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
+  font-size: 0.95em; /* 稍微小一些字体 */
+}
+.news .card h3 {
+  font-size: 1em; /* 标题更紧凑 */
+  margin-bottom: 5px;
+}
+.news .card p {
+  margin: 0; /* 去掉多余间距 */
+}
+
+/* 新闻/论文紧凑卡片 */
+.paper .card {
+  background: #fff;
+  padding: 5px 15px; /* 缩小 padding */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 更轻的阴影 */
+  font-size: 0.95em; /* 稍微小一些字体 */
+}
+.paper .card h3 {
+  font-size: 1em; /* 标题更紧凑 */
+  margin-bottom: 5px;
+}
+.paper .card p {
+  margin: 0; /* 去掉多余间距 */
 }
 
 .members .card {
